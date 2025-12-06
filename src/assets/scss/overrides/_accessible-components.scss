@@ -1,0 +1,8 @@
+// Make secondary colour in accessible-astro-components respond to brand colour changes
+// (Note this is not the approach suggested in the accessible-astro-components documentation -
+// which is to set background-color etc. for each components type.)
+
+:root {
+  --color-secondary-border: light-dark(var(--color-secondary-500), var(--color-secondary-100)) !important;
+  --color-secondary-bg: light-dark(var(--color-secondary-100), var(--color-secondary-500)) !important;
+}
